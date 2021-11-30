@@ -1,0 +1,3 @@
+# ✨ Day {Number} ✨
+
+## Part Two
