@@ -1,6 +1,6 @@
 const chalk = require('chalk')
 const path = require('path')
-const parseInput = require('../../helpers/parseInput')
+const { multiply, parseInput } = require('../../helpers')
 
 const movements = parseInput(path.resolve(__dirname, '../input.txt'), '\n')
 const getSinglePosition = (coOrdinates, movement) => {
@@ -23,8 +23,6 @@ const getSinglePosition = (coOrdinates, movement) => {
   return newCoordinates
 }
 
-const multiply = (a, b) => { return a * b; }
-
 const planTotalJourney = (startingCoordinates, movements) => {
   const newCoordinates = startingCoordinates
 
@@ -42,6 +40,5 @@ const string = `🎄🎄🎄 ${planTotalJourney({ x: 0, y: 0 }, movements)} 🎄
 
 module.exports = {
   getSinglePosition,
-  multiply,
   planTotalJourney
 }

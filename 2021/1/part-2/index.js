@@ -1,6 +1,6 @@
 const chalk = require('chalk')
 const path = require('path')
-const parseInput = require('../../helpers/parseInput')
+const { parseInput } = require('../../helpers')
 
 const depths = parseInput(path.resolve(__dirname, '../input.txt'), '\n').map(input => parseInt(input))
 

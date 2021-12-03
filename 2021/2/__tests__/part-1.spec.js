@@ -1,16 +1,9 @@
-const { getSinglePosition, multiply, planTotalJourney} = require('../part-1/index')
+const { getSinglePosition, planTotalJourney} = require('../part-1/index')
 
 describe('Part One', () => {
   describe('#getSinglePosition', () => {
     it('should return new co-ordinates depicting a single move', () => {
       expect(getSinglePosition({x:0, y:0}, 'forward 5')).toStrictEqual({x: 5, y: 0})
-    });
-  });
-
-  describe('#multiply', () => {
-    it('should multiply two numbers', () => {
-      const result = multiply(10, 15)
-      expect(result).toBe(150)
     });
   });
 
