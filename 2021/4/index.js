@@ -126,5 +126,5 @@ const losingBoard = getLosingBoard(bingoBoards)
 const partOneSolution = multiply(sumUnmarked(winningBoard), winningBoard.winningNumber)
 const partTwoSolution = multiply(sumUnmarked(losingBoard), losingBoard.winningNumber)
 
-console.log(chalk.red.bgGreen(`🎄🎄🎄 ${partOneSolution} 🎄🎄🎄`))
-console.log(chalk.green.bgRed(`🎄🎄🎄 ${partTwoSolution} 🎄🎄🎄`))
+// console.log(chalk.red.bgGreen(`🎄🎄🎄 ${partOneSolution} 🎄🎄🎄`))
+// console.log(chalk.green.bgRed(`🎄🎄🎄 ${partTwoSolution} 🎄🎄🎄`))
